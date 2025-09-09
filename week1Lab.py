@@ -44,8 +44,8 @@ def linear_search_multi(needle, haystack):
     result = []
     for i in range(len(haystack)):
         if haystack[i] == needle:
-            result.append(i)   # "push" equivalent is append in Python
+            result.append(i)
     return result
 
-print(linear_search_multi(5, [4, 5, 3, 5]))  # [1, 3]
-print(linear_search_multi(7, [4, 5, 3, 5]))  # []
+print(linear_search_multi(5, [4, 5, 3, 5])) 
+print(linear_search_multi(7, [4, 5, 3, 5]))  
