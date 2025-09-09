@@ -37,3 +37,15 @@ def binary_search(needle, haystack):
             return None
 print(binary_search(8, [6, 2, 8, 4]))
 print(binary_search(5, [6, 2, 8, 4]))
+
+
+# Part 3
+def linear_search_multi(needle, haystack):
+    result = []
+    for i in range(len(haystack)):
+        if haystack[i] == needle:
+            result.append(i)   # "push" equivalent is append in Python
+    return result
+
+print(linear_search_multi(5, [4, 5, 3, 5]))  # [1, 3]
+print(linear_search_multi(7, [4, 5, 3, 5]))  # []
